@@ -11,16 +11,20 @@ public class GenerateToken {
 
         Scanner sc = new Scanner(System.in);
         String select = sc.nextLine();
+        String token;
 
         switch (select) {
             case "1":
-                tokenGenerator(5);
+                token = tokenGenerator(5);
+                System.out.println("Your generated token: " + token);
                 break;
             case "2":
-                tokenGenerator(10);
+                token = tokenGenerator(10);
+                System.out.println("Your generated token: " + token);
                 break;
             case "3":
-                tokenGenerator(15);
+                token = tokenGenerator(15);
+                System.out.println("Your generated token: " + token);
                 break;
             default:
                 System.out.println("You picked wrong option");
